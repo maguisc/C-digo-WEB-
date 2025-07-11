@@ -1,0 +1,121 @@
+/* ====================================================
+   ESTILOS GENERALES
+   ==================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px 0;
+}
+
+/* ====================================================
+   BOTONES GENERALES
+   ==================================================== */
+.btn-adoptar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.btn-adoptar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-donar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.btn-donar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+/* ====================================================
+   FORMULARIOS GENERALES
+   ==================================================== */
+input.form-control {
+    border: 2px solid #f28c38;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input.form-control:focus {
+    border-color: #e76f51;
+    box-shadow: 0 0 0 0.15rem rgba(231, 111, 81, 0.25);
+}
+
+/* ====================================================
+   NAVEGACIÓN
+   ==================================================== */
+nav {
+    background-color: #fff7f0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+nav a {
+    color: #6a4e42;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 12px;
+}
+
+nav a:hover {
+    background-color: #e76f5120;
+    color: #e76f51;
+}
+
+nav ul,
+nav .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ====================================================
+   FOOTER
+   ==================================================== */
+.footer {
+    background-color: #fff7f0;
+    color: #6a4e42;
+    font-size: 15px;
+    border-top: 1px solid #eee;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #e76f51;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-redes i {
+    font-size: 19px;
+    margin: 0 8px;
+}

@@ -1,0 +1,138 @@
+/* ====================================================
+   ESTILOS PARA FORMULARIOS (ADOPCIÓN, TRÁNSITO, CONTACTO)
+   ==================================================== */
+
+/* Container principal de formularios */
+.formulario-container {
+    margin-top: 2rem;
+}
+
+/* Tarjeta del formulario */
+.formulario-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-card .card-header {
+    background: linear-gradient(135deg, #e76f51, #f4a261);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+
+.formulario-card .card-header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.formulario-card .card-body {
+    padding: 30px;
+}
+
+/* Campos de formulario específicos */
+.formulario-field {
+    margin-bottom: 1.5rem;
+}
+
+.formulario-field label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.formulario-field input,
+.formulario-field select,
+.formulario-field textarea {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-field input:focus,
+.formulario-field select:focus,
+.formulario-field textarea:focus {
+    border-color: #e76f51;
+    box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.25);
+}
+
+/* Radio buttons personalizados */
+.formulario-radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.formulario-radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.formulario-radio-item input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #e76f51;
+}
+
+/* Botones del formulario */
+.formulario-botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-formulario-enviar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.btn-formulario-enviar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-formulario-cancelar {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.btn-formulario-cancelar:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+/* Estilos específicos para formulario de contacto */
+.formulario-contacto .card-header {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c);
+}
+
+/* Estilos específicos para formulario de tránsito */
+.formulario-transito .card-header {
+    background: linear-gradient(135deg, #f7b267, #f4a261);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formulario-botones {
+        flex-direction: column;
+    }
+    
+    .btn-formulario-enviar,
+    .btn-formulario-cancelar {
+        width: 100%;
+    }
+}

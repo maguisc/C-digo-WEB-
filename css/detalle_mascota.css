@@ -1,0 +1,70 @@
+/* ====================================================
+   ESTILOS PARA DETALLE_MASCOTA.PHP
+   ==================================================== */
+
+/* Container principal del detalle */
+.detalle-mascota-container {
+    margin-top: 20px;
+}
+
+/* Imagen principal de la mascota */
+.detalle-mascota-imagen {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tarjeta de información */
+.detalle-mascota-card {
+    height: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-mascota-card .card-header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+}
+
+.detalle-mascota-card .card-header h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #1B4965;
+}
+
+/* Tabla de información */
+.detalle-mascota-card .table-borderless th {
+    width: 130px;
+    color: #666;
+    padding: 15px 20px;
+}
+
+.detalle-mascota-card .table-borderless td {
+    padding: 15px 20px;
+}
+
+/* Botón principal del detalle */
+.detalle-mascota-card .btn-primary {
+    background-color: #e76f51;
+    border-color: #e76f51;
+    padding: 12px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.detalle-mascota-card .btn-primary:hover {
+    background-color: #d45d3c;
+    border-color: #d45d3c;
+}
+
+/* Responsive para móviles */
+@media (max-width: 576px) {
+    .detalle-mascota-imagen {
+        height: 300px;
+    }
+
+    .detalle-mascota-card {
+        height: auto;
+    }
+}

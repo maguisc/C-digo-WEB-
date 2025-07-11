@@ -1,0 +1,98 @@
+/* ====================================================
+   ESTILOS PARA REGISTRAR_MASCOTA.PHP
+   ==================================================== */
+
+/* Formulario de registro de mascota */
+.registrar-mascota-form {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.registrar-mascota-form h2 {
+    color: #1B4965;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Campos del formulario */
+.registrar-mascota-field {
+    margin-bottom: 20px;
+}
+
+.registrar-mascota-field label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.registrar-mascota-field input,
+.registrar-mascota-field select {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.registrar-mascota-field input:focus,
+.registrar-mascota-field select:focus {
+    border-color: #e76f51;
+    box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.25);
+}
+
+/* Vista previa de imagen */
+.imagen-preview {
+    max-width: 200px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones del formulario */
+.registrar-mascota-botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-guardar-mascota {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-guardar-mascota:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-cancelar-mascota {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-cancelar-mascota:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .registrar-mascota-botones {
+        flex-direction: column;
+    }
+    
+    .btn-guardar-mascota,
+    .btn-cancelar-mascota {
+        width: 100%;
+    }
+}

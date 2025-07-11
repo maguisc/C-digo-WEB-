@@ -1,0 +1,123 @@
+/* ====================================================
+   ESTILOS PARA REALIZAR_DONACION.PHP
+   ==================================================== */
+
+/* Banner específico de donaciones */
+.donacion-hero {
+    background-image: url('../uploads/fondo_donacion.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.donacion-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    padding: 24px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.donacion-overlay h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.donacion-overlay p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Hero alternativo con imagen */
+.donacion-hero-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.donacion-hero-img .hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.donacion-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 24px 32px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donacion-titulo h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.donacion-titulo p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Tarjetas de donación personalizadas */
+.card-donacion-personalizada {
+    background-color: #fff7f0;
+    border-top: 5px solid #e76f51;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-donacion-personalizada h3 {
+    color: #e76f51;
+}
+
+.card-donacion-personalizada .icon-container i {
+    font-size: 30px;
+    color: #e76f51;
+}
+
+/* Botón específico para donaciones */
+.btn-donar-grande {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
+}
+
+.btn-donar-grande:hover {
+    background-color: #d45d3c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
+}
+
+/* Responsive para móviles */
+@media (max-width: 576px) {
+    .btn-donar {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,200 @@
+/* ====================================================
+   ESTILOS PARA PANEL ADMINISTRATIVO
+   ==================================================== */
+
+/* Estructura del admin */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Sidebar del admin */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    z-index: 1030;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+    color: #1B4965;
+}
+
+.close-sidebar {
+    display: none;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Menú móvil */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1040;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+/* Enlaces del sidebar */
+.nav-link {
+    color: #495057;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: #1B4965;
+    text-decoration: none;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Botones del admin */
+.btn-nueva,
+.btn-publicar {
+    background-color: #e76f51;
+    color: white;
+}
+
+.btn-nueva:hover,
+.btn-publicar:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.btn-editar {
+    background-color: rgb(33, 133, 66);
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: rgb(28, 119, 57);
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: #DC3545;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Tablas del admin */
+.table td {
+    vertical-align: middle;
+}
+
+/* Overlay para móvil */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000080;
+    z-index: 1020;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* Responsive para tablets y móviles */
+@media (max-width: 991px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar.active {
+        display: block;
+    }
+
+    .close-sidebar {
+        display: block;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    .table td,
+    .table th {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .table .btn {
+        padding: 5px 10px;
+        font-size: 13px;
+        margin: 2px;
+    }
+
+    .btn-nueva {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .table th:nth-child(2),
+    .table td:nth-child(2),
+    .table th:nth-child(4),
+    .table td:nth-child(4) {
+        display: none;
+    }
+
+    .table .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .card .btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-body {
+        padding: 16px 12px;
+    }
+}

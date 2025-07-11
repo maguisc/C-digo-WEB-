@@ -1,0 +1,82 @@
+/* ====================================================
+   ESTILOS PARA MASCOTAS_PERDIDAS.PHP
+   ==================================================== */
+
+/* Tarjetas específicas para mascotas perdidas */
+.card-perdida-mascota {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-top: 4px solid #ee6c4d;
+}
+
+.card-perdida-mascota .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ee6c4d;
+    text-align: center;
+}
+
+.card-perdida-mascota .card-text {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-perdida {
+    background-color: #ee6c4d;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.btn-perdida:hover {
+    background-color: #e55a47;
+    color: white;
+}
+
+/* Filtros específicos para perdidas */
+.filtros-perdidas {
+    max-width: 1000px;
+    margin: 0 auto 32px auto;
+    padding: 16px 24px;
+    background-color: #fef7f6;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid #ee6c4d;
+}
+
+.btn-filtrar-perdidas {
+    background-color: #ee6c4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-filtrar-perdidas:hover {
+    background-color: #e55a47;
+}
+
+/* Alerta especial para mascotas perdidas */
+.alerta-perdida {
+    background-color: #fee;
+    border: 2px solid #ee6c4d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alerta-perdida h4 {
+    color: #ee6c4d;
+    margin-bottom: 10px;
+}

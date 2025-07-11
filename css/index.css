@@ -1,0 +1,113 @@
+/* ====================================================
+   ESTILOS PARA INDEX.PHP - PÁGINA PRINCIPAL
+   ==================================================== */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Tarjetas de servicios principales */
+.card {
+    border: none;
+    background: #fff7f0;
+    border-top: 5px solid transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.card-text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Colores específicos de tarjetas */
+.card-transito {
+    border-top-color: #f7b267;
+}
+
+.card-perdidas {
+    border-top-color: #ee6c4d;
+}
+
+.card-reportar {
+    border-top-color: #f4a261;
+}
+
+.card-donacion {
+    border-top-color: #b56576;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 29px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-text {
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+}

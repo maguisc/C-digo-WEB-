@@ -1,0 +1,67 @@
+/* ====================================================
+   ESTILOS PARA MASCOTAS_TRANSITO.PHP
+   ==================================================== */
+
+/* Tarjetas específicas para tránsito */
+.card-transito-mascota {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-top: 4px solid #f7b267;
+}
+
+.card-transito-mascota .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f7b267;
+    text-align: center;
+}
+
+.card-transito-mascota .card-text {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-transito {
+    background-color: #f7b267;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.btn-transito:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+/* Filtros específicos para tránsito */
+.filtros-transito {
+    max-width: 1000px;
+    margin: 0 auto 32px auto;
+    padding: 16px 24px;
+    background-color: #fff9f0;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid #f7b267;
+}
+
+.btn-filtrar-transito {
+    background-color: #f7b267;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-filtrar-transito:hover {
+    background-color: #f4a261;
+}

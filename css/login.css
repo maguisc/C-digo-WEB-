@@ -1,0 +1,133 @@
+/* ====================================================
+   ESTILOS PARA LOGIN.PHP Y REGISTRO.PHP
+   ==================================================== */
+
+/* Container principal del login */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Imagen lateral del login */
+.login-image {
+    width: 50%;
+    background-image: url('../../../uploads/mascostasinicio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Formulario de login */
+.login-form {
+    width: 50%;
+    background-color: #fff1e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+/* Caja del formulario */
+.login-box {
+    background-color: white;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #1B4965;
+    margin-bottom: 24px;
+}
+
+/* Botón de login */
+.btn-login {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn-login:hover {
+    background-color: #e08c4c;
+}
+
+/* Footer del login */
+.login-footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.login-footer a {
+    color: #1B74E4;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de registro */
+.btn-registrate {
+    border: 2px solid #f28c38;
+    border-radius: 10px;
+    background-color: #f28c38;
+    color: white;
+    padding: 10px 25px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn-registrate:hover {
+    background-color: #f6886c;
+    border-color: #f6886c;
+    color: white;
+}
+
+/* Validación de contraseña */
+.requirements-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.requirements-list li {
+    padding: 3px 0;
+}
+
+.requirements-list li::before {
+    content: '❌';
+    margin-right: 5px;
+}
+
+.requirements-list li.valid::before {
+    content: '✅';
+}
+
+.invalid {
+    color: #dc3545;
+}
+
+.valid {
+    color: #198754;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .login-form {
+        width: 100%;
+    }
+}

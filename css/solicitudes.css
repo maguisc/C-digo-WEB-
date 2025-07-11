@@ -1,0 +1,103 @@
+/* ====================================================
+   ESTILOS PARA SOLICITUDES/INDEX.PHP
+   ==================================================== */
+
+/* Título principal de solicitudes */
+.titulo-solicitudes {
+    color: #1B4965;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Tabla de solicitudes */
+.table-solicitudes {
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.table-solicitudes th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.table-solicitudes td {
+    padding: 12px;
+}
+
+/* Imagen de mascota en tabla */
+.mascota-imagen {
+    max-width: 120px;
+    max-height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Imagen en modal */
+.mascota-modal-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Mensaje cuando no hay solicitudes */
+.sin-solicitudes {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* Estados de solicitudes con badges */
+.badge {
+    font-size: 0.875em;
+    padding: 0.5em 0.75em;
+}
+
+/* Botones específicos para solicitudes */
+.btn-aprobar {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.875rem;
+}
+
+.btn-aprobar:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: white;
+}
+
+.btn-rechazar {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.875rem;
+}
+
+.btn-rechazar:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: white;
+}
+
+.btn-cerrar-consulta {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.875rem;
+}
+
+.btn-cerrar-consulta:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: white;
+}
