@@ -80,3 +80,50 @@
     color: #ee6c4d;
     margin-bottom: 10px;
 }
+
+/* Usar las mismas clases de adopción para mantener consistencia */
+.card-adopcion {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-adopcion .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #e76f51;
+    text-align: center;
+}
+
+.card-adopcion .card-text {
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-adopcion .btn-adoptar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+}
+
+/* Imagen de mascota en tarjeta */
+.mascota-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

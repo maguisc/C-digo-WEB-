@@ -70,3 +70,16 @@
 .btn-filtrar-adopcion:hover {
     background-color: #d45d3c;
 }
+
+/* Botón filtrar genérico */
+.btn-filtrar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-filtrar:hover {
+    background-color: #d45d3c;
+}
