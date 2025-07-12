@@ -39,7 +39,7 @@ include '../config/database.php';
                     </div>
                     <h3 class="mb-3" style="color:#e76f51;">Mercado Pago</h3>
                     <p class="mb-3">Hacé tu donación fácil y rápida con un solo clic</p>
-                    <a href="https://www.mercadopago.com.ar/tu-link-de-donacion" target="_blank" class="btn btn-primary btn-lg px-5 btn-donar">Donar con Mercado Pago</a>
+                    <a href="https://www.mercadopago.com.ar/tu-link-de-donacion" target="_blank" class="btn boton-donar-mercadopago">Donar con Mercado Pago</a>
                 </div>
             </div>
         </div>

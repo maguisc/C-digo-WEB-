@@ -71,9 +71,9 @@ $mascota = $result->fetch_assoc();
 
                         <!-- Botones de acción -->
                         <div class="d-flex justify-content-center gap-3">
-                            <button type="submit" class="btn btn-primary">Enviar información</button>
+                            <button type="submit" class="btn boton-enviar-informacion">Enviar información</button>
                             <a href="../detalle_mascota.php?id=<?php echo $id_mascota; ?>"
-                                class="btn btn-secondary">Cancelar</a>
+                                class="btn boton-cancelar-formulario">Cancelar</a>
                         </div>
                     </form>
                 </div>

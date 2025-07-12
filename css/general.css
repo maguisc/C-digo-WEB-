@@ -62,7 +62,7 @@ body {
 /* ====================================================
    BOTONES GENERALES
    ==================================================== */
-.btn-adoptar {
+.boton-adoptar {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -71,12 +71,68 @@ body {
     border-radius: 25px;
 }
 
-.btn-adoptar:hover {
+.boton-adoptar:hover {
     background-color: #d45d3c;
     color: white;
 }
 
-.btn-donar {
+.boton-transito {
+    background-color: #f7b267;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.boton-transito:hover {
+    background-color: #f4a261;
+    color: white;
+}
+
+.boton-consultar {
+    background-color: #ee6c4d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.boton-consultar:hover {
+    background-color: #e55a47;
+    color: white;
+}
+
+.boton-ver-mascotas {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.boton-ver-mascotas:hover {
+    background-color: #d45d3c;
+    color: white;
+}
+
+.boton-reportar {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.boton-reportar:hover {
+    background-color: #e08c4c;
+    color: white;
+}
+
+.boton-donar {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -86,7 +142,7 @@ body {
     border-radius: 25px;
 }
 
-.btn-donar:hover {
+.boton-donar:hover {
     background-color: #d45d3c;
     color: white;
 }

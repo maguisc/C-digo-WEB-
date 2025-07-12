@@ -29,7 +29,9 @@
     text-align: center;
 }
 
-.card-adopcion .btn-adoptar {
+.card-adopcion .boton-adoptar,
+.card-adopcion .boton-transito,
+.card-adopcion .boton-consultar {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -40,6 +42,19 @@
     border-radius: 25px;
 }
 
+.card-adopcion .boton-transito {
+    background-color: #f7b267;
+}
+
+.card-adopcion .boton-consultar {
+    background-color: #ee6c4d;
+}
+
+.card-adopcion .boton-adoptar:hover,
+.card-adopcion .boton-transito:hover,
+.card-adopcion .boton-consultar:hover {
+    opacity: 0.9;
+}
 /* Imagen de mascota en tarjeta */
 .mascota-imagen {
     width: 100%;

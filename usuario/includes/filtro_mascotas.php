@@ -66,11 +66,11 @@ $tipo = isset($_GET['tipo']) ? $_GET['tipo'] : '';
                         <p class="card-text"><?php echo $row['edad']; ?></p>
                         
                         <?php if ($tipoPublicacion == 'Adopción'): ?>
-                            <button class="btn btn-adoptar">Adoptar</button>
+                            <button class="btn boton-adoptar">Adoptar</button>
                         <?php elseif ($tipoPublicacion == 'Tránsito'): ?>
-                            <button class="btn btn-adoptar">Dar tránsito</button>
+                            <button class="btn boton-transito">Dar tránsito</button>
                         <?php elseif ($tipoPublicacion == 'Perdido'): ?>
-                            <button class="btn btn-adoptar">Consultar por <?php echo $row['nombre']; ?></button>
+                            <button class="btn boton-consultar">Consultar por <?php echo $row['nombre']; ?></button>
                         <?php endif; ?>
                     </div>
                 </a>

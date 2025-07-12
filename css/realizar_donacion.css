@@ -95,7 +95,7 @@
 }
 
 /* Botón específico para donaciones */
-.btn-donar-grande {
+.boton-donar-mercadopago {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -104,18 +104,19 @@
     font-size: 18px;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(231, 111, 81, 0.3);
+    display: inline-block;
+    text-decoration: none;
 }
 
-.btn-donar-grande:hover {
+.boton-donar-mercadopago:hover {
     background-color: #d45d3c;
     color: white;
-    transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(231, 111, 81, 0.4);
 }
 
 /* Responsive para móviles */
 @media (max-width: 576px) {
-    .btn-donar {
+    .boton-donar {
         width: 100%;
         display: block;
         margin-top: 10px;

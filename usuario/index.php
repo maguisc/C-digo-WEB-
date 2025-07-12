@@ -35,7 +35,7 @@ include '../config/database.php';
                     <i class="fas fa-paw card-icon"></i>
                     <h3 class="card-title">Mascotas en Adopción</h3>
                     <p class="card-text">Encontrá a tu próximo compañero y dale un hogar lleno de amor.</p>
-                    <a href="mascotas_adopcion.php" class="btn btn-adoptar">Ver mascotas</a>
+                    <a href="mascotas_adopcion.php" class="btn boton-ver-mascotas">Ver mascotas</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@ include '../config/database.php';
                     <i class="fas fa-home card-icon"></i>
                     <h3 class="card-title">Mascotas en Tránsito</h3>
                     <p class="card-text">Ayudá temporalmente a una mascota mientras encuentra su hogar definitivo.</p>
-                    <a href="mascotas_transito.php" class="btn btn-adoptar">Ver mascotas</a>
+                    <a href="mascotas_transito.php" class="btn boton-ver-mascotas">Ver mascotas</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ include '../config/database.php';
                     <i class="fas fa-search card-icon"></i>
                     <h3 class="card-title">Mascotas Perdidas</h3>
                     <p class="card-text">Ayudanos a reunir mascotas perdidas con sus familias.</p>
-                    <a href="mascotas_perdidas.php" class="btn btn-adoptar">Ver mascotas</a>
+                    <a href="mascotas_perdidas.php" class="btn boton-ver-mascotas">Ver mascotas</a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ include '../config/database.php';
                     <i class="fas fa-bullhorn card-icon"></i>
                     <h3 class="card-title">Reportar Mascota</h3>
                     <p class="card-text">¿Encontraste o perdiste una mascota? Reportala acá y te ayudamos a difundir.</p>
-                    <a href="#" onclick="iniciarChat(); return false;" class="btn btn-adoptar">Reportar</a>
+                    <a href="#" onclick="iniciarChat(); return false;" class="btn boton-reportar">Reportar</a>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@ include '../config/database.php';
                     <i class="fas fa-heart card-icon"></i>
                     <h3 class="card-title">Realizar Donación</h3>
                     <p class="card-text">Tu ayuda es fundamental para continuar con nuestra labor de rescate y cuidado.</p>
-                    <a href="realizar_donacion.php" class="btn btn-adoptar">Donar</a>
+                    <a href="realizar_donacion.php" class="btn boton-donar">Donar</a>
                 </div>
             </div>
         </div>

@@ -84,17 +84,17 @@ $mascota = $result->fetch_assoc();
 
                     <!-- Botón de acción según tipo de publicación -->
                     <?php if($mascota['tipo_publicacion'] == 'Adopción'): ?>
-                        <button class="btn btn-primary" onclick="location.href='formularios/formulario_adopcion.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="btn boton-formulario-adopcion" onclick="location.href='formularios/formulario_adopcion.php?id=<?php echo $id_mascota; ?>'">
                             Enviar formulario de Adopción
                         </button>
 
                     <?php elseif($mascota['tipo_publicacion'] == 'Tránsito'): ?>
-                        <button class="btn btn-primary" onclick="location.href='formularios/formulario_transito.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="btn boton-formulario-transito" onclick="location.href='formularios/formulario_transito.php?id=<?php echo $id_mascota; ?>'">
                             Enviar formulario de Tránsito
                         </button>
 
                     <?php else: ?>
-                        <button class="btn btn-primary" onclick="location.href='formularios/contactar.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="btn boton-contactar-mascota" onclick="location.href='formularios/contactar.php?id=<?php echo $id_mascota; ?>'">
                             Preguntar por <?php echo $mascota['nombre']; ?>
                         </button>
                         

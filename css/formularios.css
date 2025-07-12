@@ -85,7 +85,8 @@
     margin-top: 30px;
 }
 
-.btn-formulario-enviar {
+.boton-enviar-formulario,
+.boton-enviar-informacion {
     background-color: #e76f51;
     color: white;
     border: none;
@@ -95,12 +96,13 @@
     font-size: 16px;
 }
 
-.btn-formulario-enviar:hover {
+.boton-enviar-formulario:hover,
+.boton-enviar-informacion:hover {
     background-color: #d45d3c;
     color: white;
 }
 
-.btn-formulario-cancelar {
+.boton-cancelar-formulario {
     background-color: #6c757d;
     color: white;
     border: none;
@@ -110,9 +112,10 @@
     font-size: 16px;
 }
 
-.btn-formulario-cancelar:hover {
+.boton-cancelar-formulario:hover {
     background-color: #5a6268;
     color: white;
+    text-decoration: none;
 }
 
 /* Estilos específicos para formulario de contacto */

@@ -114,8 +114,8 @@ $mascota = $result->fetch_assoc();
 
                         <!-- Botones de acción -->
                         <div class="d-flex justify-content-center gap-3">
-                            <button type="submit" class="btn btn-primary">Enviar formulario</button>
-                            <a href="../detalle_mascota.php?id=<?php echo $id_mascota; ?>" class="btn btn-secondary">Cancelar</a>
+                            <button type="submit" class="btn boton-enviar-formulario">Enviar formulario</button>
+                            <a href="../detalle_mascota.php?id=<?php echo $id_mascota; ?>" class="btn boton-cancelar-formulario">Cancelar</a>
                         </div>
                     </form>
                 </div>
