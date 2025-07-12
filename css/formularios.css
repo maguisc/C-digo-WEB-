@@ -3,82 +3,106 @@
    ==================================================== */
 
 /* Container principal de formularios */
-.formulario-container {
+.contenedor-formulario {
     margin-top: 2rem;
 }
 
 /* Tarjeta del formulario */
-.formulario-card {
+.tarjeta-formulario {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.formulario-card .card-header {
+.tarjeta-formulario .encabezado-formulario {
     background: linear-gradient(135deg, #e76f51, #f4a261);
     color: white;
     border-radius: 15px 15px 0 0;
     padding: 20px;
 }
 
-.formulario-card .card-header h2 {
+.tarjeta-formulario .titulo-formulario {
     margin: 0;
     font-weight: 600;
+    text-align: center;
 }
 
-.formulario-card .card-body {
+.tarjeta-formulario .cuerpo-formulario {
     padding: 30px;
 }
 
 /* Campos de formulario específicos */
-.formulario-field {
+.grupo-campo {
     margin-bottom: 1.5rem;
 }
 
-.formulario-field label {
+.etiqueta-campo {
     font-weight: 600;
     color: #333;
     margin-bottom: 8px;
+    display: block;
 }
 
-.formulario-field input,
-.formulario-field select,
-.formulario-field textarea {
+.campo-entrada,
+.campo-seleccion,
+.campo-texto {
     border: 2px solid #e9ecef;
     border-radius: 8px;
     padding: 12px 15px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+    width: 100%;
 }
 
-.formulario-field input:focus,
-.formulario-field select:focus,
-.formulario-field textarea:focus {
+.campo-entrada:focus,
+.campo-seleccion:focus,
+.campo-texto:focus {
     border-color: #e76f51;
     box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.25);
+    outline: none;
 }
 
 /* Radio buttons personalizados */
-.formulario-radio-group {
+.grupo-opciones {
     display: flex;
     gap: 20px;
     margin-top: 10px;
 }
 
-.formulario-radio-item {
+.opcion-radio {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.formulario-radio-item input[type="radio"] {
+.opcion-radio input[type="radio"] {
     width: 18px;
     height: 18px;
     accent-color: #e76f51;
 }
 
+.etiqueta-radio {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Grupo de opciones de vivienda */
+.opciones-vivienda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.opcion-vivienda {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 /* Botones del formulario */
-.formulario-botones {
+.contenedor-botones-formulario {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -94,6 +118,7 @@
     font-weight: 600;
     border-radius: 25px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .boton-enviar-formulario:hover,
@@ -110,6 +135,8 @@
     font-weight: 600;
     border-radius: 25px;
     font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .boton-cancelar-formulario:hover {
@@ -118,24 +145,27 @@
     text-decoration: none;
 }
 
-/* Estilos específicos para formulario de contacto */
-.formulario-contacto .card-header {
-    background: linear-gradient(135deg, #6f42c1, #e83e8c);
-}
-
-/* Estilos específicos para formulario de tránsito */
-.formulario-transito .card-header {
-    background: linear-gradient(135deg, #f7b267, #f4a261);
+/* Campo de solo lectura */
+.campo-solo-lectura {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .formulario-botones {
+    .contenedor-botones-formulario {
         flex-direction: column;
     }
     
-    .btn-formulario-enviar,
-    .btn-formulario-cancelar {
+    .boton-enviar-formulario,
+    .boton-enviar-informacion,
+    .boton-cancelar-formulario {
         width: 100%;
+    }
+
+    .grupo-opciones {
+        flex-direction: column;
+        gap: 10px;
     }
 }

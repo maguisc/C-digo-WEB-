@@ -1,5 +1,5 @@
 /* ====================================================
-   ESTILOS GENERALES
+   ESTILOS GENERALES - TODAS LAS CLASES EN ESPAÑOL
    ==================================================== */
 body {
     margin: 0;
@@ -7,14 +7,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
+.contenedor {
     padding: 20px 0;
 }
 
 /* ====================================================
    TARJETAS GENERALES (PARA TODAS LAS PÁGINAS)
    ==================================================== */
-.card {
+.tarjeta {
     border: none;
     background: #fff7f0;
     border-top: 5px solid transparent;
@@ -24,39 +24,43 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.card-body {
+.tarjeta-cuerpo {
     padding: 15px;
     text-align: center;
 }
 
-.card-icon {
+.tarjeta-icono {
     font-size: 30px;
     margin-bottom: 15px;
     color: #666;
 }
 
-.card-text {
+.tarjeta-texto {
     color: #666;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-/* Colores específicos de tarjetas */
-.card-transito {
+/* Colores específicos de tarjetas por tipo */
+.tarjeta-transito {
     border-top-color: #f7b267;
 }
 
-.card-perdidas {
+.tarjeta-perdidas {
     border-top-color: #ee6c4d;
 }
 
-.card-reportar {
+.tarjeta-reportar {
     border-top-color: #f4a261;
 }
 
-.card-donacion {
+.tarjeta-donacion {
     border-top-color: #b56576;
+}
+
+.tarjeta-adopcion {
+    border-top-color: #e76f51;
 }
 
 /* ====================================================
@@ -147,17 +151,29 @@ body {
     color: white;
 }
 
+.boton-filtrar {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.boton-filtrar:hover {
+    background-color: #d45d3c;
+}
+
 /* ====================================================
-   FORMULARIOS GENERALES
+   CAMPOS DE FORMULARIO GENERALES
    ==================================================== */
-input.form-control {
+.campo-formulario {
     border: 2px solid #f28c38;
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 10px;
 }
 
-input.form-control:focus {
+.campo-formulario:focus {
     border-color: #e76f51;
     box-shadow: 0 0 0 0.15rem rgba(231, 111, 81, 0.25);
 }
@@ -165,7 +181,7 @@ input.form-control:focus {
 /* ====================================================
    NAVEGACIÓN
    ==================================================== */
-nav {
+.navegacion-principal {
     background-color: #fff7f0;
     padding: 10px 30px;
     display: flex;
@@ -174,7 +190,7 @@ nav {
     border-bottom: 1px solid #eee;
 }
 
-nav a {
+.enlace-navegacion {
     color: #6a4e42;
     font-weight: 500;
     text-decoration: none;
@@ -182,13 +198,12 @@ nav a {
     padding: 6px 12px;
 }
 
-nav a:hover {
+.enlace-navegacion:hover {
     background-color: #e76f5120;
     color: #e76f51;
 }
 
-nav ul,
-nav .navbar-nav {
+.menu-navegacion {
     display: flex;
     justify-content: center;
     flex: 1;
@@ -198,9 +213,9 @@ nav .navbar-nav {
 }
 
 /* ====================================================
-   FOOTER
+   PIE DE PÁGINA
    ==================================================== */
-.footer {
+.pie-pagina {
     background-color: #fff7f0;
     color: #6a4e42;
     font-size: 15px;
@@ -209,17 +224,17 @@ nav .navbar-nav {
     text-align: center;
 }
 
-.footer a {
+.pie-pagina a {
     color: #e76f51;
     text-decoration: none;
     margin: 0 8px;
 }
 
-.footer a:hover {
+.pie-pagina a:hover {
     text-decoration: underline;
 }
 
-.footer-redes i {
+.redes-sociales i {
     font-size: 19px;
     margin: 0 8px;
 }

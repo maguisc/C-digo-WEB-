@@ -26,94 +26,96 @@ $mascota = $result->fetch_assoc();
 <div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header" style="background-color: #E6E6FA;">
-                    <h2 class="text-center mb-0">Formulario de Adopción</h2>
+            <div class="tarjeta-formulario">
+                <div class="encabezado-formulario">
+                    <h2 class="titulo-formulario">Formulario de Adopción</h2>
                 </div>
-                <div class="card-body">
+                <div class="cuerpo-formulario">
                     <form action="procesar_adopcion.php" method="POST">
                         <input type="hidden" name="id_mascota" value="<?php echo $id_mascota; ?>">
                         <input type="hidden" name="id_usuario" value="<?php echo $_SESSION['usuario_id']; ?>">
                         
                         <!-- Datos personales -->
-                        <div class="mb-3">
-                            <label for="nombre_completo" class="form-label">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" required>
+                        <div class="grupo-campo">
+                            <label for="nombre_completo" class="etiqueta-campo">Nombre y apellido</label>
+                            <input type="text" class="campo-entrada" id="nombre_completo" name="nombre_completo" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="grupo-campo">
+                            <label for="email" class="etiqueta-campo">Correo electrónico</label>
+                            <input type="email" class="campo-entrada" id="email" name="email" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Número de teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                        <div class="grupo-campo">
+                            <label for="telefono" class="etiqueta-campo">Número de teléfono</label>
+                            <input type="tel" class="campo-entrada" id="telefono" name="telefono" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="direccion" class="form-label">Dirección</label>
-                            <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        <div class="grupo-campo">
+                            <label for="direccion" class="etiqueta-campo">Dirección</label>
+                            <input type="text" class="campo-entrada" id="direccion" name="direccion" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="nombre_mascota" class="form-label">Nombre de la mascota a adoptar</label>
-                            <input type="text" class="form-control" id="nombre_mascota" name="nombre_mascota" 
+                        <div class="grupo-campo">
+                            <label for="nombre_mascota" class="etiqueta-campo">Nombre de la mascota a adoptar</label>
+                            <input type="text" class="campo-entrada campo-solo-lectura" id="nombre_mascota" name="nombre_mascota" 
                                 value="<?php echo htmlspecialchars($mascota['nombre']); ?>" readonly>
                         </div>
 
                         <!-- Preguntas sobre experiencia -->
-                        <div class="mb-3">
-                            <label class="form-label">¿Tiene experiencia previa en el cuidado de las mascotas?</label>
-                            <div class="d-flex gap-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experiencia_previa" value="Si" id="exp_si" required>
-                                    <label class="form-check-label" for="exp_si">Si</label>
+                        <div class="grupo-campo">
+                            <label class="etiqueta-campo">¿Tiene experiencia previa en el cuidado de las mascotas?</label>
+                            <div class="grupo-opciones">
+                                <div class="opcion-radio">
+                                    <input type="radio" name="experiencia_previa" value="Si" id="exp_si" required>
+                                    <label class="etiqueta-radio" for="exp_si">Si</label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="experiencia_previa" value="No" id="exp_no" required>
-                                    <label class="form-check-label" for="exp_no">No</label>
+                                <div class="opcion-radio">
+                                    <input type="radio" name="experiencia_previa" value="No" id="exp_no" required>
+                                    <label class="etiqueta-radio" for="exp_no">No</label>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">¿Está de acuerdo en recibir una visita previa a la adopción?</label>
-                            <div class="d-flex gap-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="acepta_visita" value="Si" id="visita_si" required>
-                                    <label class="form-check-label" for="visita_si">Si</label>
+                        <div class="grupo-campo">
+                            <label class="etiqueta-campo">¿Está de acuerdo en recibir una visita previa a la adopción?</label>
+                            <div class="grupo-opciones">
+                                <div class="opcion-radio">
+                                    <input type="radio" name="acepta_visita" value="Si" id="visita_si" required>
+                                    <label class="etiqueta-radio" for="visita_si">Si</label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="acepta_visita" value="No" id="visita_no" required>
-                                    <label class="form-check-label" for="visita_no">No</label>
+                                <div class="opcion-radio">
+                                    <input type="radio" name="acepta_visita" value="No" id="visita_no" required>
+                                    <label class="etiqueta-radio" for="visita_no">No</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Condiciones de vivienda -->
-                        <div class="mb-4">
-                            <label class="form-label">Condiciones de vivienda</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo_vivienda" value="Casa con patio" id="casa_patio" required>
-                                <label class="form-check-label" for="casa_patio">Casa con patio</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo_vivienda" value="Casa sin patio" id="casa_sin_patio">
-                                <label class="form-check-label" for="casa_sin_patio">Casa sin patio</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo_vivienda" value="Departamento chico" id="depto_chico">
-                                <label class="form-check-label" for="depto_chico">Departamento chico</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo_vivienda" value="Departamento grande" id="depto_grande">
-                                <label class="form-check-label" for="depto_grande">Departamento grande</label>
+                        <div class="grupo-campo">
+                            <label class="etiqueta-campo">Condiciones de vivienda</label>
+                            <div class="opciones-vivienda">
+                                <div class="opcion-vivienda">
+                                    <input type="radio" name="tipo_vivienda" value="Casa con patio" id="casa_patio" required>
+                                    <label class="etiqueta-radio" for="casa_patio">Casa con patio</label>
+                                </div>
+                                <div class="opcion-vivienda">
+                                    <input type="radio" name="tipo_vivienda" value="Casa sin patio" id="casa_sin_patio">
+                                    <label class="etiqueta-radio" for="casa_sin_patio">Casa sin patio</label>
+                                </div>
+                                <div class="opcion-vivienda">
+                                    <input type="radio" name="tipo_vivienda" value="Departamento chico" id="depto_chico">
+                                    <label class="etiqueta-radio" for="depto_chico">Departamento chico</label>
+                                </div>
+                                <div class="opcion-vivienda">
+                                    <input type="radio" name="tipo_vivienda" value="Departamento grande" id="depto_grande">
+                                    <label class="etiqueta-radio" for="depto_grande">Departamento grande</label>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Botones de acción -->
-                        <div class="d-flex justify-content-center gap-3">
+                        <div class="contenedor-botones-formulario">
                             <button type="submit" class="btn boton-enviar-formulario">Enviar formulario</button>
                             <a href="../detalle_mascota.php?id=<?php echo $id_mascota; ?>" class="btn boton-cancelar-formulario">Cancelar</a>
                         </div>

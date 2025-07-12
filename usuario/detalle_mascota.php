@@ -32,22 +32,22 @@ $mascota = $result->fetch_assoc();
 ?>
 
 <div class="container">
-    <div class="row detalle-mascota-container">
+    <div class="row contenedor-detalle-mascota">
         <!-- Imagen de la mascota -->
         <div class="col-md-6">
             <img src="<?php echo '../' . $mascota['imagen']; ?>" 
-                class="detalle-mascota-imagen" 
+                class="imagen-detalle-mascota" 
                 alt="<?php echo $mascota['nombre']; ?>">
         </div>
         
         <!-- Información y botones -->
         <div class="col-md-6">
-            <div class="card detalle-mascota-card">
-                <div class="card-header">
-                    <h4>DESCRIPCIÓN</h4>
+            <div class="tarjeta-informacion-mascota">
+                <div class="encabezado-tarjeta">
+                    <h4 class="titulo-descripcion">DESCRIPCIÓN</h4>
                 </div>
-                <div class="card-body">
-                    <table class="table table-borderless">
+                <div class="tarjeta-cuerpo">
+                    <table class="tabla-informacion table-borderless">
                         <tr>
                             <th>Nombre:</th>
                             <td><?php echo $mascota['nombre']; ?></td>
@@ -84,17 +84,17 @@ $mascota = $result->fetch_assoc();
 
                     <!-- Botón de acción según tipo de publicación -->
                     <?php if($mascota['tipo_publicacion'] == 'Adopción'): ?>
-                        <button class="btn boton-formulario-adopcion" onclick="location.href='formularios/formulario_adopcion.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="boton-formulario-adopcion" onclick="location.href='formularios/formulario_adopcion.php?id=<?php echo $id_mascota; ?>'">
                             Enviar formulario de Adopción
                         </button>
 
                     <?php elseif($mascota['tipo_publicacion'] == 'Tránsito'): ?>
-                        <button class="btn boton-formulario-transito" onclick="location.href='formularios/formulario_transito.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="boton-formulario-transito" onclick="location.href='formularios/formulario_transito.php?id=<?php echo $id_mascota; ?>'">
                             Enviar formulario de Tránsito
                         </button>
 
                     <?php else: ?>
-                        <button class="btn boton-contactar-mascota" onclick="location.href='formularios/contactar.php?id=<?php echo $id_mascota; ?>'">
+                        <button class="boton-contactar-mascota" onclick="location.href='formularios/contactar.php?id=<?php echo $id_mascota; ?>'">
                             Preguntar por <?php echo $mascota['nombre']; ?>
                         </button>
                         

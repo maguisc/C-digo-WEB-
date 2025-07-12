@@ -3,12 +3,12 @@
    ==================================================== */
 
 /* Container principal del detalle */
-.detalle-mascota-container {
+.contenedor-detalle-mascota {
     margin-top: 20px;
 }
 
 /* Imagen principal de la mascota */
-.detalle-mascota-imagen {
+.imagen-detalle-mascota {
     width: 100%;
     height: 600px;
     object-fit: cover;
@@ -16,34 +16,38 @@
 }
 
 /* Tarjeta de información */
-.detalle-mascota-card {
+.tarjeta-informacion-mascota {
     height: 600px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
-.detalle-mascota-card .card-header {
+.tarjeta-informacion-mascota .encabezado-tarjeta {
     background-color: #f8f9fa;
     padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
 }
 
-.detalle-mascota-card .card-header h4 {
+.tarjeta-informacion-mascota .titulo-descripcion {
     margin: 0;
     font-weight: bold;
     color: #1B4965;
 }
 
 /* Tabla de información */
-.detalle-mascota-card .table-borderless th {
+.tabla-informacion th {
     width: 130px;
     color: #666;
     padding: 15px 20px;
+    font-weight: 600;
 }
 
-.detalle-mascota-card .table-borderless td {
+.tabla-informacion td {
     padding: 15px 20px;
+    color: #333;
 }
 
-/* Botón principal del detalle */
+/* Botones principales del detalle */
 .boton-formulario-adopcion,
 .boton-formulario-transito,
 .boton-contactar-mascota {
@@ -56,6 +60,7 @@
     margin-top: 20px;
     border-radius: 8px;
     border: none;
+    font-size: 16px;
 }
 
 .boton-formulario-adopcion:hover,
@@ -68,11 +73,17 @@
 
 /* Responsive para móviles */
 @media (max-width: 576px) {
-    .detalle-mascota-imagen {
+    .imagen-detalle-mascota {
         height: 300px;
     }
 
-    .detalle-mascota-card {
+    .tarjeta-informacion-mascota {
         height: auto;
+    }
+
+    .tabla-informacion th,
+    .tabla-informacion td {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 }
